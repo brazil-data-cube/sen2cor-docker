@@ -21,7 +21,7 @@ Docker Support for Sen2Cor
 
 
 .. image:: https://img.shields.io/badge/License-GPLv3-blue.svg
-        :target: https://github.com/brazil-data-cube/bdc-collectors/blob/master/LICENSE
+        :target: https://github.com/brazil-data-cube/sen2cor-docker/blob/master/LICENSE
         :alt: Software License
 
 
