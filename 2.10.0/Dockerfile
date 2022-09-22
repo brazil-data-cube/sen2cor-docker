@@ -27,8 +27,8 @@ LABEL "org.brazildatacube.description"="Software environment \
 for Sentinel-2 Level 2A product generation and formatting."
 
 # Build arguments
-ARG SEN2COR_VERSION="2.8.0"
-ARG SEN2COR_INSTALLER_NAME="Sen2Cor-02.08.00-Linux64.run"
+ARG SEN2COR_VERSION="2.10.0"
+ARG SEN2COR_INSTALLER_NAME="Sen2Cor-02.10.01-Linux64.run"
 ARG SEN2COR_INSTALLER_URL="http://step.esa.int/thirdparties/sen2cor/${SEN2COR_VERSION}/${SEN2COR_INSTALLER_NAME}"
 ARG SEN2COR_INSTALLER_DIR="/tmp/"
 ARG SEN2COR_INSTALL_PATH="/opt/sen2cor/${SEN2COR_VERSION}"
@@ -45,7 +45,7 @@ ADD ${SEN2COR_INSTALLER_URL} ${SEN2COR_INSTALLER_DIR}
 RUN chmod +x ${SEN2COR_INSTALLER_DIR}/${SEN2COR_INSTALLER_NAME} && \
     bash ${SEN2COR_INSTALLER_DIR}/${SEN2COR_INSTALLER_NAME} --target ${SEN2COR_INSTALL_PATH} --nox11 && \
     mkdir ${SEN2COR_INSTALL_PATH}/cfg && \
-    cp /root/sen2cor/2.8/cfg/L2A_GIPP.xml ${SEN2COR_INSTALL_PATH}/cfg/ && \
+    cp /root/sen2cor/2.10/cfg/L2A_GIPP.xml ${SEN2COR_INSTALL_PATH}/cfg/ && \
     rm ${SEN2COR_INSTALLER_DIR}/${SEN2COR_INSTALLER_NAME}
 
 # Make Sen2Cor directory the current one
