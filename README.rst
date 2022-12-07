@@ -52,7 +52,7 @@ You can create docker images for Sen2Cor version 2.5.5, 2.8.0, or 2.9.0. If you 
 
     cd 2.9.0
 
-    docker build  --no-cache --tag brazildatacube/sen2cor:2.9.0 .
+    docker build  --no-cache --tag brazil-data-cube/sen2cor:2.9.0 .
 
 
 .. note::
@@ -88,7 +88,7 @@ You can create a temporary container that runs Sen2Cor with the following comman
                --volume /path/to/CCI4SEN2COR:/mnt/sen2cor-aux/CCI4SEN2COR \
                --volume /path/to/L2A_GIPP.xml:/opt/sen2cor/2.9.0/cfg/L2A_GIPP.xml \
                --volume /path/to/srtm:/mnt/sen2cor-aux/srtm:rw \
-               brazildatacube/sen2cor:2.9.0 S2A_MSIL1C_20210903T140021_N0301_R067_T21KVR_20210903T172609.SAFE
+               brazil-data-cube/sen2cor:2.9.0 S2A_MSIL1C_20210903T140021_N0301_R067_T21KVR_20210903T172609.SAFE
 
 
 .. note::
