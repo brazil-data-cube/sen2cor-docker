@@ -52,7 +52,7 @@ More info regarding Sen2Cor can be found on its Configuration and User Manual (h
 1. Run
 
    ```bash
-   $ docker build -t sen2cor:2.5.5 .
+   $ docker build -t brazil-data-cube/sen2cor:2.5.5 .
    ```
 
    from the root of this repository.
@@ -67,7 +67,7 @@ To process a Sentinel-2 scene, using Sen2cor default parameters, run:
     -v /path/to/CCI4SEN2COR:/home/lib/python2.7/site-packages/sen2cor/aux_data \
     -v /path/to/folder/containing/.SAFEfile:/mnt/input-dir \
     -v /path/to/output:/mnt/output-dir:rw \
-    sen2cor:2.5.5 yourFile.SAFE
+    brazil-data-cube/sen2cor:2.5.5 yourFile.SAFE
 ```
 
 To process a Sentinel-2 scene, changing Sen2cor parameters, e.g. disable terrain correction, configure the /2.5/cfg/L2A_GIPP.xml and run mounting it as:
@@ -78,7 +78,7 @@ To process a Sentinel-2 scene, changing Sen2cor parameters, e.g. disable terrain
     -v /path/to/sen2cor/2.5/cfg:/root/sen2cor/2.5/cfg \
     -v /path/to/folder/containing/.SAFEfile:/mnt/input-dir \
     -v /path/to/output:/mnt/output-dir:rw \
-    sen2cor:2.5.5 yourFile.SAFE
+    brazil-data-cube/sen2cor:2.5.5 yourFile.SAFE
 ```
 
 Results are written on mounted `/mnt/output-dir/`.
