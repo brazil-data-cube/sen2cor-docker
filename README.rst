@@ -1,6 +1,6 @@
 ..
     This file is part of Brazil Data Cube Sen2cor Docker.
-    Copyright (C) 2022 INPE.
+    Copyright (C) 2022-2024 INPE.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -48,11 +48,11 @@ Image Build
 -----------
 
 
-You can create docker images for Sen2Cor version 2.5.5, 2.8.0, or 2.9.0. If you intend to build the 2.9.0 version, go to the folder named 2.9.0 and build the image with the following command::
+You can create docker images for Sen2Cor version 2.5.5, 2.8.0, 2.9.0, 2.10.0, 2.11.0 or 2.12.0. If you intend to build the 2.9.0 version, go to the folder named 2.9.0 and build the image with the following command::
 
     cd 2.9.0
 
-    docker build  --no-cache --tag brazil-data-cube/sen2cor:2.9.0 .
+    docker build --no-cache --tag brazil-data-cube/sen2cor:2.9.0 .
 
 
 .. note::
